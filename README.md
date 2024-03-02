@@ -1,2 +1,0 @@
-# blume-capel-model-app
- 
