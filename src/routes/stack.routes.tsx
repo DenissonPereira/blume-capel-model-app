@@ -1,5 +1,5 @@
 import { createStackNavigator } from '@react-navigation/stack'
-import Profile from '../screens/Profile';
+import { ComoUsar, GitHub } from '../screens';
 
 const Stack = createStackNavigator();
 
@@ -7,8 +7,8 @@ export default function StackRoutes() {
     return (
         <Stack.Navigator screenOptions={{ title: '' }}>
             <Stack.Screen
-                name='home'
-                component={Profile}
+                name='comousar'
+                component={ComoUsar}
             />
         </Stack.Navigator>
     )

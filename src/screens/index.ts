@@ -1,0 +1,6 @@
+export * from './Home'
+export * from './Sobre'
+export * from './Modelo'
+export * from './Grid'
+export * from './ComoUsar'
+export * from './GitHub'

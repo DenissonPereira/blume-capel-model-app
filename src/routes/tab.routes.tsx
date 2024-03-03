@@ -1,28 +1,50 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import { Feather } from '@expo/vector-icons'
-import Feed from '../screens/Feed'
-import New from '../screens/New'
+import { Home, Sobre, Modelo, Grid } from '../screens';
 
 const Tab = createBottomTabNavigator();
 
 export const TabRoutes = () => {
   return (
-    <Tab.Navigator screenOptions={{ headerShown: false }}>
+    <Tab.Navigator 
+        screenOptions={{ 
+            headerShown: false, 
+            tabBarLabel: () => null,
+            tabBarStyle: {
+                alignItems: 'center',
+                justifyContent: 'center',
+            }, 
+        }} 
+    >
         <Tab.Screen
-            name='feed'
-            component={Feed}
+            name='home'
+            component={Home}
             options={{
                 tabBarIcon: ({ color, size }) => <Feather name="home" color={color} size={size}/>,
-                tabBarLabel: 'Início'
             }}
         />
 
         <Tab.Screen
-            name='new'
-            component={New}
+            name='grid'
+            component={Grid}
             options={{
-                tabBarIcon: ({ color, size}) => <Feather name='plus' color={color} size={size} />,
-                tabBarLabel: 'Novo'
+                tabBarIcon: ({ color, size}) => <Feather name='grid' color={color} size={size} />,
+            }}
+        />
+
+        <Tab.Screen
+            name='modelo'
+            component={Modelo}
+            options={{
+                tabBarIcon: ({ color, size}) => <Feather name='book-open' color={color} size={size} />
+            }}
+        />
+
+        <Tab.Screen
+            name='sobre'
+            component={Sobre}
+            options={{
+                tabBarIcon: ({ color, size }) => <Feather name='help-circle' color={color} size={size} />
             }}
         />
     </Tab.Navigator>
