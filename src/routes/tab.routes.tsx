@@ -1,6 +1,7 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import { Feather } from '@expo/vector-icons'
-import { Home, Sobre, Modelo, Grid } from '../screens';
+import { Sobre, Modelo, Grid } from '../screens';
+import StackRoutes from './stack.routes';
 
 const Tab = createBottomTabNavigator();
 
@@ -17,8 +18,8 @@ export const TabRoutes = () => {
         }} 
     >
         <Tab.Screen
-            name='home'
-            component={Home}
+            name='homeTab'
+            component={StackRoutes}
             options={{
                 tabBarIcon: ({ color, size }) => <Feather name="home" color={color} size={size}/>,
             }}
