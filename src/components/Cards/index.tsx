@@ -1,16 +1,17 @@
 import React from "react";
-import { SafeAreaView, Text, View } from "react-native";
+import { SafeAreaView, ScrollView, Text, View } from "react-native";
 import { styles } from "./styles";
 import { TouchableOpacity } from "react-native-gesture-handler";
 import { useRootesHook } from "../../hooks/useRootesHook";
 import { Fontisto } from '@expo/vector-icons';
-import MathView from 'react-native-math-view';
+
 
 export const Cards: React.FC = () => {
     const { navigate } = useRootesHook();
 
+
     return (
-        <SafeAreaView>
+        <SafeAreaView style={styles.safe}>
             <View style={styles.container}>
                 <TouchableOpacity style={styles.card1} onPress={() => navigate('Spin1')}>
                     <View>
@@ -18,9 +19,6 @@ export const Cards: React.FC = () => {
                     </View>
                     <View>
                         <Text>Spin 1</Text>
-                        <MathView
-                            math={'x = \\frac{-b \\pm \\sqrt{b^2-4ac}}{2a}'}
-                        />
                     </View>
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.card2} onPress={() => navigate('Spin2')}>
@@ -28,7 +26,7 @@ export const Cards: React.FC = () => {
                         <Fontisto name="react" size={50} />
                     </View>
                     <View>
-                        <Text>Spin 2</Text>
+                        <Text>Spin 20</Text>
                     </View>
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.card3} onPress={() => navigate('Spin3')}>
