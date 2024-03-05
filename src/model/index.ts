@@ -1,4 +1,4 @@
-export interface Item {
+export interface Spin {
     id: number;
     temperatura: number;
     m_a: number;
