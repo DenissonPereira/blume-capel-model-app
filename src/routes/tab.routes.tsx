@@ -43,7 +43,7 @@ export const TabRoutes = () => {
                             backgroundColor: '#2F26D9',
                             borderRadius: 50,
                             padding: 10,
-                            overflow: 'hidden', // Certifique-se de adicionar essa linha
+                            overflow: 'hidden',
                         }}>
                             <Feather name="plus" color={'white'} size={size} />
                         </View>

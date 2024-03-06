@@ -11,7 +11,7 @@ export const styles = StyleSheet.create({
   container: {
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#F6AB68',
+    backgroundColor: '#FF5949',
     marginBottom: 20,
     borderRadius: 10,
     padding: 10,

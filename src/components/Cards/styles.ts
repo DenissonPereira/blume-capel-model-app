@@ -15,8 +15,7 @@ export const styles = StyleSheet.create({
     card1: {
         alignItems: 'center',
         justifyContent: 'center',
-        flexDirection: 'row',
-        backgroundColor: '#7FB9F2',
+        backgroundColor: '#01CD88',
         marginTop: 20,
         width: 350,
         height: 150,
@@ -26,7 +25,7 @@ export const styles = StyleSheet.create({
     card2: {
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor: '#F6AB68',
+        backgroundColor: '#FF5949',
         width: 350,
         height: 150,
         borderRadius: 15,
@@ -34,7 +33,7 @@ export const styles = StyleSheet.create({
     card3: {
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor: '#6CE7D1',
+        backgroundColor: '#ECAC48',
         width: 350,
         height: 150,
         borderRadius: 15,
