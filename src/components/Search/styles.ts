@@ -6,7 +6,7 @@ export const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
-        backgroundColor: '#fff',
+        backgroundColor: '#EFF1FE',
         padding: 5,
         borderRadius: 5,
         marginBottom: 20
@@ -17,7 +17,7 @@ export const styles = StyleSheet.create({
         width: 300
     },
     icone: {
-        backgroundColor: '#7FA9F5',
+        backgroundColor: '#2F26D9',
         borderRadius: 5,
         color: 'white',
         padding: 5

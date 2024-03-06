@@ -14,7 +14,7 @@ export default function DrawerRoutes() {
                     backgroundColor: '#fff',
                 },
                 headerStyle: {
-                    backgroundColor: '#ECEFF4'
+                    backgroundColor: '#FFFFFF'
                 },
             }}
         >

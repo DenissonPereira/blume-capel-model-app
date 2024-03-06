@@ -1,14 +1,15 @@
 import React from 'react'
-import { Text, View } from 'react-native'
+import { ScrollView, Text, View } from 'react-native'
 import { styles } from './styles'
-import { Cabecario, Caixas, Search } from '../../components'
+import { Cabecario, Caixas, Search, Slides } from '../../components'
 
 export const Home = () => {
   return (
-    <View style={styles.container}>
-      <Cabecario />
-      <Search />
-      <Caixas />
-    </View>
+      <ScrollView style={styles.container}>
+        <Cabecario />
+        <Search />
+        <Slides />
+        <Caixas />
+      </ScrollView>
   )
 }
