@@ -6,12 +6,26 @@ export const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center'
     },
+    title: {
+        fontSize: 30,
+        width: 250,
+        textAlign: 'center',
+        marginBottom: 5,
+        color: '#08224E',
+        fontWeight: 'bold',
+    },
     container: {
         alignItems: 'center',
         justifyContent: 'center',
         flexDirection: 'column',
-        gap: 20
+        gap: 20,
     },
+    underline: {
+        borderBottomColor: '#2F26D9', 
+        borderBottomWidth: 3,       
+        width: 250,
+        marginBottom: 50,
+      },
     card1: {
         alignItems: 'center',
         justifyContent: 'center',
@@ -29,6 +43,8 @@ export const styles = StyleSheet.create({
         width: 350,
         height: 150,
         borderRadius: 15,
+        color: 'white',
+        gap: 20
     },
     card3: {
         alignItems: 'center',
@@ -37,5 +53,9 @@ export const styles = StyleSheet.create({
         width: 350,
         height: 150,
         borderRadius: 15,
+        gap: 20
     },
+    text: {
+        color: 'white'
+    }
 });
